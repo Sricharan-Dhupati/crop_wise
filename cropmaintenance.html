@@ -50,9 +50,7 @@
         }
 
         .left {
-            font-size: 2rem;
-            margin-top: 20px;
-
+            font-size: 1.5rem;
         }
 
         .firstSection {
@@ -75,11 +73,14 @@
             justify-content: center;
             max-width: 80vw;
             margin: auto;
-            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-size: 1.75rem;
         }
 
         .cropmaintenance {
             margin-bottom: 80px;
+            margin-top: 80px;
+                
         }
 
         .chatbotassistant div {
@@ -89,54 +90,29 @@
             font-size: 1.2rem;
         }
 
-        img {
-            object-fit: contain;
-            width: 500px;
-            height: 500px;
-        }
-    </style>
+        </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                <p style="color:white;"><strong>Crop Wise</strong></p>
-            </div>
-            <div class="right">
-                <ul style="color:white">
-                    <li><a href="http://127.0.0.1:5500/crop_wise/chatbot.html">Chatbot Assistant</a></li>
-                    <li><a href="/">Crop Seasons</a></li>
-                    <li><a href="http://127.0.0.1:5500/crop_wise/cropmaintenance.html">Crop Maintenance</a></li>
-                    <li><a href="mailto:sricharan.dhu@gmail.com">Contact me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <p style="color:white;"> Helping farmers make informed decisions about the best crops to grow</p>
-                <span id="element" style="color:white"></span>
-            </div>
-            <div class="rightSection">
-            </div>
+        
+
+        <section class="cropmaintenance">
+            
+            <div style="color:white"><strong>Crop Maintanance Tips</strong></div>
+            <div style="color:white">1. Pest Control<br>
+            Identify and manage pests using integrated pest management techniques.</div>
+            <div style="color:white">2. Disease Prevention
+            Implement measures to prevent and control crop diseases.</div>
+            <div style="color:white">3. Fertilization
+            Provide essential nutrients to support healthy growth and yield.</div>
+            <div style="color:white">4. Weed Control
+            Remove weeds that compete with crops for nutrients and water.</div>
+            
         </section>
-        <img src="https://www.apnikheti.com/upload/organic/1974idea99organic-rice1.jpg"
-            alt="Image of a rice crop" >
-
-    </main>
-    <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
-    <script
-        src="https://mediafiles.botpress.cloud/4e475690-2ea7-4184-ba93-232fb6eff2c1/webchat/v2.1/config.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Informate', 'Innovate', 'Inspire'],
-            typeSpeed: 80,
-
-        });
-    </script>
+    </main> 
+        
 </body>
 
 </html>

@@ -50,9 +50,7 @@
         }
 
         .left {
-            font-size: 2rem;
-            margin-top: 20px;
-
+            font-size: 1.5rem;
         }
 
         .firstSection {
@@ -86,45 +84,30 @@
             justify-content: center;
             max-width: 80vw;
             margin: auto;
-            font-size: 1.2rem;
+            
+            font-size: 2rem;
         }
 
-        img {
-            object-fit: contain;
-            width: 500px;
-            height: 500px;
+        .chatbotassistant{
+            margin-top: 80px;
         }
-    </style>
+
+        </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                <p style="color:white;"><strong>Crop Wise</strong></p>
-            </div>
-            <div class="right">
-                <ul style="color:white">
-                    <li><a href="http://127.0.0.1:5500/crop_wise/chatbot.html">Chatbot Assistant</a></li>
-                    <li><a href="/">Crop Seasons</a></li>
-                    <li><a href="http://127.0.0.1:5500/crop_wise/cropmaintenance.html">Crop Maintenance</a></li>
-                    <li><a href="mailto:sricharan.dhu@gmail.com">Contact me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <p style="color:white;"> Helping farmers make informed decisions about the best crops to grow</p>
-                <span id="element" style="color:white"></span>
-            </div>
-            <div class="rightSection">
-            </div>
-        </section>
-        <img src="https://www.apnikheti.com/upload/organic/1974idea99organic-rice1.jpg"
-            alt="Image of a rice crop" >
 
+  
+
+        <section class="chatbotassistant">
+            
+                <div style="color:white"><strong>Chatbot Assistant</strong> </div>
+                <div style="color:white">- Ask Questions</div>
+                <div style="color:white">- Check Planting Dates</div>
+                <div style="color:white">- Weather Forecasts</div>
+            
+        </section>
     </main>
     <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
     <script
