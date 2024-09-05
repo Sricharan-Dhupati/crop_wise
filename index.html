@@ -17,7 +17,7 @@
         body {
             background-image: url("arya-dubey-JxAcnCavCec-unsplash.jpg");
             background-position: center;
-            height: 300px;
+            height: 600px;
             background-size: cover;
             font-family: "Poppins", sans-serif;
         }
@@ -38,14 +38,14 @@
             list-style: none;
             margin: 0 23px;
         }
-        
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        
-        nav ul li a:hover{
-            
+
+        nav ul li a:hover {
+
             font-size: 1.05rem;
         }
 
@@ -69,8 +69,11 @@
             font-size: 2.5rem;
         }
 
-        .rightSection {
-            background-color: red;
+        .cropmaintenance div {
+            justify-content: center;
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -95,17 +98,38 @@
         <section class="firstSection">
             <div class="leftSection">
                 <p style="color:white;"> Helping farmers make informed decisions about the best crops to grow</p>
+                <span id="element" style="color:white"></span>
             </div>
             <div class="rightSection">
 
             </div>
+        </section>
 
-
+        <section class="cropmaintenance">
+            <p>
+            <div style="color:white">Crop Maintenance Tips</div>
+            <div style="color:white">1. Pest Control</div>
+            <div style="color:white">Identify and manage pests using integrated pest management techniques.</div>
+            <div style="color:white">2. Disease Prevention</div>
+            <div style="color:white">Implement measures to prevent and control crop diseases.</div>
+            <div style="color:white">3. Fertilization</div>
+            <div style="color:white">Provide essential nutrients to support healthy growth and yield.</div>
+            <div style="color:white">4. Weed Control</div>
+            <div style="color:white">Remove weeds that compete with crops for nutrients and water.</div>
+            </p>
         </section>
     </main>
     <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
     <script
         src="https://mediafiles.botpress.cloud/4e475690-2ea7-4184-ba93-232fb6eff2c1/webchat/v2.1/config.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Informate', 'Innovate', 'Inspire'],
+            typeSpeed: 80,
+
+        });
+    </script>
 </body>
 
 </html>
